@@ -48,8 +48,8 @@ module.exports = async function (callback) {
     const amountToSwap = '100000';
     let amountWithDecimals = new BigNumber(amountToSwap).shiftedBy(srcToken[0].decimals).toFixed()
     const swapParams = {
-        fromTokenAddress: srcToken[0].address, // 1INCH
-        toTokenAddress: destToken[0].address, // DAI
+        fromTokenAddress: srcToken[0].address, 
+        toTokenAddress: destToken[0].address, 
         amount: amountWithDecimals,
         fromAddress: UNLOCKED_ACCOUNT,
         slippage: 25,
@@ -93,7 +93,6 @@ module.exports = async function (callback) {
             const parsedAllowance = ethers.utils.formatUnits(result, srcToken[0].decimals);
             if (parsedAllowance < parseFloat(amountToSwap)) {
                 const allowanceDiff = parseFloat(amountToSwap) - parsedAllowance;
-                // console.log('Allowance Diff : - ' + allowanceDiff)
                 console.log('Approval needed. Calling approval...');
                 approveToken(oneinchAllowanceAddress, ethers.utils.parseUnits(String(allowanceDiff), srcToken[0].decimals));
             }

@@ -26,9 +26,13 @@
 `$ npm install`
 
 ### 3. Start Ganache CLI
+You will need to fork the Ethereum Mainnet onto your local machine. 
+The command below will do just this, while unlocking the account address which you provide. 
+Please note, whichever address you choose to unlock, must be cooresponding to the UNLOCKED_ACCOUNT variable in 1inch_Swap.js 
+
 In your terminal run:
 ```
-ganache-cli -f wss://eth-mainnet.alchemyapi.io/v2/<Your-App-Key> -m <Your-Mnemonic-Phrase> -u 0x2fEb1512183545f48f6b9C5b4EbfCaF49CfCa6F3 -p 7545
+ganache-cli -f wss://eth-mainnet.alchemyapi.io/v2/<Your-App-Key> -m <Your-Mnemonic-Phrase> -u <UNLOCKED_ACCOUNT_ADDRESS> -p 7545
 ```
 
 Replace Your-App-Key with your Alchemy Project ID located in the settings of your project. Replace Your-Mnemonic-Phrase with your own mnemonic phrase. If you don't have a mnemonic phrase to include you can omit it:

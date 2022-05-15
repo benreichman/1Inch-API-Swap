@@ -6,7 +6,7 @@
 -Configured for https://localhost:7545 Ethereum Mainnet Fork (via Ganache)
 -Uses Ethers.jS
 
-## Technology Stack & Tools
+## Tech Stack
 
 - Node
 - [Ethers](https://web3js.readthedocs.io/en/v1.5.2/) (Blockchain Interaction)

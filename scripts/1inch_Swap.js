@@ -8,37 +8,6 @@ const provider = new ethers.providers.JsonRpcProvider("http://127.0.0.1:7545");
 const UNLOCKED_ACCOUNT = '0xcA436e14855323927d6e6264470DeD36455fC8bD';
 const signer = provider.getSigner(UNLOCKED_ACCOUNT);
 const IERC20 = require('@openzeppelin/contracts/build/contracts/ERC20.json')
-// DAI Token
-const erc20ABI = require('../abis/erc20.json');
-const { decryptKeystoreSync } = require('@ethersproject/json-wallets');
-const prompt = require('prompt-sync')();
-
-
-const oneSplitDexes = [
-    "Uniswap",
-    "Kyber",
-    "Bancor",
-    "Oasis",
-    "Curve Compound",
-    "Curve uni",
-    "Curve Y",
-    "Curve Binance",
-    "Curve Synthetix",
-    "Uniswap Compound",
-    "Uniswap CHAI",
-    "Uniswap Aave",
-    "Mooniswap",
-    "Uniswap V2",
-    "Uniswap V2 ETH",
-    "Uniswap V2 DAI",
-    "Uniswap V2 USDC",
-    "Curve Pax",
-    "Curve renBTC",
-    "Curve tBTC",
-    "Dforce XSwap",
-    "Shell",
-    "mStable mUSD"
-];
 
 module.exports = async function (callback) {
     const signerArray = await provider.listAccounts();

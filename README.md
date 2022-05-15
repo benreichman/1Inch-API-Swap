@@ -39,5 +39,7 @@ ganache-cli -f wss://eth-mainnet.alchemyapi.io/v2/<Your-App-Key> -u <UNLOCKED_AC
 
 ### 4. Start the Script to See the Swap in Action
 The script will run using UNLOCKED_ACCOUNT. Must match whichever account you chose to unlock when forking. 
-`$ truffle exec ./scripts/1inch_Swap.js`
+```
+$ truffle exec ./scripts/1inch_Swap.js`
+```
 

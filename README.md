@@ -1,5 +1,11 @@
 # 1Inch API Swap
 
+## About
+
+-Script to perform an ERC20 token swap utilizing the 1Inch Api 
+-Configured for https://localhost:7545 Ethereum Mainnet Fork (via Ganache)
+-Uses Ethers.jS
+
 ## Technology Stack & Tools
 
 - Node

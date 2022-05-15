@@ -35,11 +35,7 @@ In your terminal run:
 ganache-cli -f wss://eth-mainnet.alchemyapi.io/v2/<Your-App-Key> -u <UNLOCKED_ACCOUNT_ADDRESS> -p 7545
 ```
 
-Replace Your-App-Key with your Alchemy Project ID located in the settings of your project. Replace Your-Mnemonic-Phrase with your own mnemonic phrase. If you don't have a mnemonic phrase to include you can omit it:
 
-```
-ganache-cli -f wss://eth-mainnet.alchemyapi.io/v2/<Your-App-Key> -u 0x2fEb1512183545f48f6b9C5b4EbfCaF49CfCa6F3 -p 7545
-```
 
 ### 4. Start the Script to See the Swap in Action
 The script will run using UNLOCKED_ACCOUNT. Must match whichever account you chose to unlock when forking. 

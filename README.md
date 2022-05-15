@@ -34,12 +34,3 @@ ganache-cli -f wss://eth-mainnet.alchemyapi.io/v2/<Your-App-Key> -u 0x2fEb151218
 ### 4. Start the Script to See the Swap in Action
 `$ truffle exec ./scripts/1inch_Swap.js`
 
-### 5. Migrate Smart Contracts
-In a seperate terminal run:
-`$ truffle migrate --reset`
-
-### 6. Fund Accounts
-`$ truffle exec ./scripts/1_fund.js`
-
-### 6. Create Uniswap Pool
-`$ truffle exec ./scripts/2_create_pool.js`

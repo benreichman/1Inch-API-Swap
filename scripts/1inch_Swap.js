@@ -29,12 +29,16 @@ module.exports = async function (callback) {
     if (!destToken[0]) {
         console.log('Error! DestToken not found in tokensList...Manual destToken injection neccessary.')
         callback();
-        // const manualTokenAddress = prompt("ERC20 Token's Address?:");
-        // destTokenContract = new ethers.Contract(manualTokenAddress, IERC20.abi, signer);
-        // console.log(`Hey there ${name}`);
     }
     if(destToken.length!=0){
         destTokenContract = new ethers.Contract(destToken[0].address, IERC20.abi, signer)
+    }
+    if (!srcToken[0]) {
+        console.log('Error! SrcToken not found in tokensList...Manual srcToken injection neccessary.')
+        callback();
+    }
+    if(srcToken.length!=0){
+        srcTokenContract = new ethers.Contract(srcToken[0].address, IERC20.abi, signer)
     }
 
     srcTokenContract = new ethers.Contract(srcToken[0].address, IERC20.abi, signer)

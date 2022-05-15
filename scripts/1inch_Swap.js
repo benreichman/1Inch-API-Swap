@@ -28,10 +28,6 @@ module.exports = async function (callback) {
 
     if (!destToken[0]) {
         console.log('Error! DestToken not found in tokensList...Manual destToken injection neccessary.')
-        ////
-        // const injectedAddress = 'ERC20_CONTRACT_ADDRESS_HERE'
-        // destTokenContract = new ethers.Contract(injectedAddress, IERC20.abi, signer)
-        ////
         callback();
         // const manualTokenAddress = prompt("ERC20 Token's Address?:");
         // destTokenContract = new ethers.Contract(manualTokenAddress, IERC20.abi, signer);

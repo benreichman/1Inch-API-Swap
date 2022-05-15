@@ -28,11 +28,11 @@
 ### 3. Start Ganache CLI
 You will need to fork the Ethereum Mainnet onto your local machine. 
 The command below will do just this, while unlocking the account address which you provide. 
-Please note, whichever address you choose to unlock, must be cooresponding to the UNLOCKED_ACCOUNT variable in 1inch_Swap.js 
+-Please note, whichever address you choose to unlock, must be cooresponding to the UNLOCKED_ACCOUNT variable in 1inch_Swap.js 
 
 In your terminal run:
 ```
-ganache-cli -f wss://eth-mainnet.alchemyapi.io/v2/<Your-App-Key> -m <Your-Mnemonic-Phrase> -u <UNLOCKED_ACCOUNT_ADDRESS> -p 7545
+ganache-cli -f wss://eth-mainnet.alchemyapi.io/v2/<Your-App-Key> -u <UNLOCKED_ACCOUNT_ADDRESS> -p 7545
 ```
 
 Replace Your-App-Key with your Alchemy Project ID located in the settings of your project. Replace Your-Mnemonic-Phrase with your own mnemonic phrase. If you don't have a mnemonic phrase to include you can omit it:
@@ -42,5 +42,6 @@ ganache-cli -f wss://eth-mainnet.alchemyapi.io/v2/<Your-App-Key> -u 0x2fEb151218
 ```
 
 ### 4. Start the Script to See the Swap in Action
+The script will run using UNLOCKED_ACCOUNT. Must match whichever account you chose to unlock when forking. 
 `$ truffle exec ./scripts/1inch_Swap.js`
 

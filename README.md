@@ -2,9 +2,8 @@
 
 ## Technology Stack & Tools
 
-- Solidity (Writing Smart Contract)
-- Javascript (React & Testing)
-- [Web3](https://web3js.readthedocs.io/en/v1.5.2/) (Blockchain Interaction)
+- Node
+- [Ethers](https://web3js.readthedocs.io/en/v1.5.2/) (Blockchain Interaction)
 - [Truffle](https://www.trufflesuite.com/docs/truffle/overview) (Development Framework)
 - [Ganache-cli](https://github.com/trufflesuite/ganache) (For Local Blockchain)
 - [Alchemy](https://www.alchemy.com/) (For forking the Ethereum mainnet)
@@ -32,8 +31,8 @@ Replace Your-App-Key with your Alchemy Project ID located in the settings of you
 ganache-cli -f wss://eth-mainnet.alchemyapi.io/v2/<Your-App-Key> -u 0x2fEb1512183545f48f6b9C5b4EbfCaF49CfCa6F3 -p 7545
 ```
 
-### 4. Start the Bot
-`$ node ./bot.js`
+### 4. Start the Script to See the Swap in Action
+`$ truffle exec ./scripts/1inch_Swap.js
 
 ### 5. Migrate Smart Contracts
 In a seperate terminal run:

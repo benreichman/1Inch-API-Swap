@@ -28,7 +28,7 @@
 ### 3. Start Ganache CLI
 You will need to fork the Ethereum Mainnet onto your local machine. 
 The command below will do just this, while unlocking the account address which you provide. 
--Please note, whichever address you choose to unlock, must be cooresponding to the UNLOCKED_ACCOUNT variable in 1inch_Swap.js 
+- Please note, whichever address you choose to unlock, must be cooresponding to the UNLOCKED_ACCOUNT variable in 1inch_Swap.js 
 
 In your terminal run:
 ```
